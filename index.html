@@ -343,7 +343,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
         <div class="receipt-line"><span class="label">Antigüedad</span><span class="val">14 meses</span></div>
         <div class="receipt-rule"></div>
         <div class="receipt-total"><span>Resultado</span><span>Alta probabilidad</span></div>
-        <div class="receipt-stamp">✓ CERCA DEL PISO</div>
+        <div class="receipt-stamp">✓ CERCA DE OBTENERLA</div>
       </div>
     </div>
   </div>
@@ -537,13 +537,13 @@ function compute(){
     ctaAfter.style.display = 'inline-block';
   } else if(score >= FLOOR){
     headline.textContent = 'En el filo';
-    rResult.textContent = 'Cerca del piso · Platinum';
-    rStamp.textContent = '~ CERCA DEL PISO';
+    rResult.textContent = 'Cerca de obtenerla · Platinum';
+    rStamp.textContent = '~ CERCA DE OBTENERLA';
     rStamp.style.borderColor = '#C79A46'; rStamp.style.color = '#8A661F';
     ctaAfter.style.display = 'inline-block';
   } else {
     headline.textContent = 'Aún no llega';
-    rResult.textContent = 'Por debajo del piso';
+    rResult.textContent = 'Aún no te alcanza';
     rStamp.textContent = '✕ AJUSTA TU PERFIL';
     rStamp.style.borderColor = '#A6472B'; rStamp.style.color = '#A6472B';
     ctaAfter.style.display = 'none';
