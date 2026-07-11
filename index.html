@@ -12,7 +12,7 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elegible — ¿Te alcanza para la Amex Platinum?</title>
+<title>Elegible — ¿Te alcanza para una tarjeta premium?</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
@@ -327,6 +327,9 @@ a:focus-visible, button:focus-visible, input:focus-visible{
     <div class="brand">elegible<span>.</span></div>
     <a class="nav-cta" href="#calculadora">Ver si calificas →</a>
   </nav>
+  <div style="background:var(--ink-2); border-bottom:1px solid rgba(199,154,70,0.18); text-align:center; padding:8px 20px; font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-muted);">
+    Proyecto independiente, sin afiliación con American Express ni ninguna institución financiera.
+  </div>
 </header>
 
 <section class="hero">
@@ -334,16 +337,16 @@ a:focus-visible, button:focus-visible, input:focus-visible{
     <div>
       <div class="eyebrow">Antes de solicitar</div>
       <h1>Todo empieza en un número: <em>$30,000</em> al mes.</h1>
-      <p class="lede">La Tarjeta American Express Platinum de Crédito suele pedir un ingreso mensual comprobable arriba de ese piso. Antes de llenar la solicitud, checa en 20 segundos qué tan cerca estás.</p>
+      <p class="lede">Las tarjetas de crédito premium en México suelen pedir un ingreso mensual comprobable arriba de ese piso. Antes de llenar la solicitud, checa en 20 segundos qué tan cerca estás.</p>
       <div class="hero-actions">
         <a href="#calculadora" class="btn-primary">Calcular mi elegibilidad</a>
-        <a href="#comparador" class="btn-ghost">Ver beneficios Platinum</a>
+        <a href="#comparador" class="btn-ghost">Ver beneficios</a>
       </div>
     </div>
     <div class="receipt-wrap">
       <div class="receipt">
         <div class="receipt-head">
-          <div class="mono">Ticket de elegibilidad · Platinum</div>
+          <div class="mono">Ticket de elegibilidad</div>
           <div class="display">Vista previa</div>
         </div>
         <div class="receipt-rule"></div>
@@ -362,8 +365,8 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Paso 1</div>
-      <h2>¿Qué tan cerca estás del piso de ingreso para Platinum?</h2>
-      <p>Esto es una estimación orientativa basada en el requisito público de ingreso, no una decisión de Amex. La aprobación final depende de buró de crédito, antigüedad y otros factores que no controla esta calculadora.</p>
+      <h2>¿Qué tan cerca estás del piso de ingreso?</h2>
+      <p>Esto es una estimación orientativa basada en el requisito público de ingreso, no una decisión del emisor de la tarjeta. La aprobación final depende de buró de crédito, antigüedad y otros factores que no controla esta calculadora.</p>
     </div>
 
     <div class="calc-shell">
@@ -396,7 +399,7 @@ a:focus-visible, button:focus-visible, input:focus-visible{
       <div class="calc-result">
         <div class="receipt" id="resultReceipt" style="transform:rotate(-0.8deg); max-width:100%;">
           <div class="receipt-head">
-            <div class="mono">Ticket de elegibilidad · Platinum</div>
+            <div class="mono">Ticket de elegibilidad</div>
             <div class="display" id="resultHeadline">Ingresa tus datos</div>
           </div>
           <div class="receipt-rule"></div>
@@ -420,8 +423,8 @@ a:focus-visible, button:focus-visible, input:focus-visible{
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Paso 2</div>
-      <h2>La Tarjeta American Express Platinum de Crédito</h2>
-      <p>Estos son los ejes de beneficio que suele destacar esta tarjeta. Confirma siempre montos, anualidad y condiciones vigentes en la solicitud oficial antes de aplicar — aquí solo te damos el panorama para decidir si te conviene.</p>
+      <h2>Qué esperar de una tarjeta de crédito premium</h2>
+      <p>Este es un panorama general y orientativo — no representa a ninguna marca ni institución financiera. Los beneficios, montos y condiciones exactas cambian con el tiempo, así que confírmalos siempre en la solicitud oficial antes de aplicar.</p>
     </div>
 
     <div class="table-scroll">
@@ -429,44 +432,52 @@ a:focus-visible, button:focus-visible, input:focus-visible{
         <thead>
           <tr>
             <th>Rubro</th>
-            <th>Qué incluye</th>
+            <th>Qué suele incluir</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="item" style="color:var(--gold-bright); font-weight:600;">Acceso a salas</td>
-            <td class="item">Salas premium en aeropuertos a nivel global por membresía, pensadas para quien viaja seguido.</td>
+            <td class="item" style="color:var(--gold-bright); font-weight:600;">Acceso a salas de aeropuerto</td>
+            <td class="item">Salas premium en aeropuertos alrededor del mundo, ideal si viajas con cierta frecuencia.</td>
           </tr>
           <tr>
-            <td class="item" style="color:var(--gold-bright); font-weight:600;">Seguros de viaje</td>
-            <td class="item">Cobertura de asistencia y seguro en viajes pagados con la tarjeta.</td>
+            <td class="item" style="color:var(--gold-bright); font-weight:600;">Seguros y asistencia de viaje</td>
+            <td class="item">Cobertura de asistencia y seguro al pagar tus viajes con la tarjeta.</td>
           </tr>
           <tr>
-            <td class="item" style="color:var(--gold-bright); font-weight:600;">Membresías y concierge</td>
-            <td class="item">Servicio de concierge y beneficios en hoteles, renta de autos y experiencias selectas.</td>
+            <td class="item" style="color:var(--gold-bright); font-weight:600;">Promociones</td>
+            <td class="item">Meses sin intereses y ofertas en tiendas departamentales, viajes y otras categorías durante el año.</td>
+          </tr>
+          <tr>
+            <td class="item" style="color:var(--gold-bright); font-weight:600;">Referir amigos o familiares</td>
+            <td class="item">Muchas tarjetas premium te dejan ganar beneficios adicionales por cada persona que refieras.</td>
           </tr>
           <tr>
             <td class="item" style="color:var(--gold-bright); font-weight:600;">Anualidad</td>
-            <td class="item">Es una tarjeta con anualidad alta frente a productos de entrada — tiene sentido si el uso de salas y viajes la compensa.</td>
+            <td class="item">El buen uso de la tarjeta suele retribuir la anualidad cuando la combinas con promociones de distintas índoles, como compras en tiendas departamentales, viajes o promociones exclusivas.</td>
           </tr>
         </tbody>
       </table>
     </div>
+
+    <p style="margin-top:24px; font-size:14px; color:var(--text-muted); max-width:60ch;">
+      Nota personal: uso como referencia la Tarjeta American Express Platinum de Crédito porque, en mi experiencia, ofrece mejores beneficios que otras tarjetas del mismo nivel — esta página no está afiliada ni representa a la marca.
+    </p>
   </div>
 </section>
 
 <section class="final-cta">
   <div class="wrap">
     <h2>Si el ticket dice que estás cerca, es buen momento de intentarlo.</h2>
-    <p>Solicita la Tarjeta American Express Platinum de Crédito con mi link de referido — no cambia nada en tu proceso ni en tus beneficios, solo apoyas el proyecto.</p>
-    <a href="#" class="btn-primary" id="mainCta">Solicitar la Amex Platinum →</a>
+    <p>Solicita con mi link de referido — no cambia nada en tu proceso ni en tus beneficios, solo apoyas el proyecto.</p>
+    <a href="#" class="btn-primary" id="mainCta">Solicitar la tarjeta →</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     <div class="rule"></div>
-    <p>Este sitio es un proyecto independiente y no está afiliado, patrocinado ni operado por American Express. La información se refiere a la Tarjeta American Express Platinum de Crédito. La calculadora ofrece una estimación orientativa, no una decisión de crédito. Verifica requisitos, beneficios y anualidad vigentes en la solicitud oficial antes de aplicar.</p>
+    <p>Este sitio es un proyecto independiente y no está afiliado, patrocinado ni operado por American Express ni ninguna institución financiera. La calculadora ofrece una estimación orientativa, no una decisión de crédito. Verifica requisitos, beneficios y anualidad vigentes en la solicitud oficial antes de aplicar.</p>
   </div>
 </footer>
 
@@ -552,13 +563,13 @@ function compute(){
 
   if(score >= FLOOR * 1.15){
     headline.textContent = 'Buen margen';
-    rResult.textContent = 'Alta probabilidad · Platinum';
+    rResult.textContent = 'Alta probabilidad';
     rStamp.textContent = '✓ ALTA PROBABILIDAD';
     rStamp.style.borderColor = '#7E9B87'; rStamp.style.color = '#3E5F49';
     ctaAfter.style.display = 'inline-block';
   } else if(score >= FLOOR){
     headline.textContent = 'En el filo';
-    rResult.textContent = 'Cerca de obtenerla · Platinum';
+    rResult.textContent = 'Cerca de obtenerla';
     rStamp.textContent = '~ CERCA DE OBTENERLA';
     rStamp.style.borderColor = '#C79A46'; rStamp.style.color = '#8A661F';
     ctaAfter.style.display = 'inline-block';
