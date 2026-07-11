@@ -475,6 +475,18 @@ const REFERRAL_LINK = "https://americanexpress.com/es-mx/referral/platinum-credi
 document.getElementById('mainCta').href = REFERRAL_LINK;
 document.getElementById('ctaAfterCalc').href = REFERRAL_LINK;
 
+function trackConversion(){
+  if(typeof gtag === 'function'){
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18312423666/1vU7CNG5880cEPLRhZxE',
+        'value': 1.0,
+        'currency': 'MXN'
+    });
+  }
+}
+document.getElementById('mainCta').addEventListener('click', trackConversion);
+document.getElementById('ctaAfterCalc').addEventListener('click', trackConversion);
+
 let state = { income: null, type: 'nomina', tenure: 'mid' };
 
 function setupPills(groupId, key){
